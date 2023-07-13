@@ -1,4 +1,4 @@
-//Bibliotecas
+
 #include 'TopConn.ch'
 #include 'Totvs.ch'
 
