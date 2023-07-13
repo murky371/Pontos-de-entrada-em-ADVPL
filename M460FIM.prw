@@ -3,7 +3,7 @@
 #include 'Totvs.ch'
 
  /*/{Protheus.doc} M460FIM
-Este P.E. e' chamado apos a Gravacao da NF de Saida, e fora da transação.
+Este P.E. e' chamado apos a Gravacao da NF de Saida, e fora da transaÃ§Ã£o.
 @type function
 @version  
 @author Joao Goncalves
@@ -15,12 +15,10 @@ Este P.E. e' chamado apos a Gravacao da NF de Saida, e fora da transação.
 User Function M460FIM()
     
     Local aAreaSF4 :=    SF4->(GetArea())
-    
-    //Pega o pedido
+   
     DbSelectArea('SF4')
     SF4->(DbSetorder(1))
-         
-    //Se tiver pedido
+        
     SA3->(DbSeek(xFILIAL("SA3") + SF2->F2_VEND1))
 
     SD2->(DbSetorder(3))
